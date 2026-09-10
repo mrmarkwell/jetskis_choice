@@ -16,8 +16,8 @@ Autonomous agents must consult this document during boot and update it upon comp
 
 ### Phase 0: Repository Architecture & Verification Harness
 - [x] **Task 0.1**: Initialize autonomous harness, living state machines, and developer tooling (ADR-001, ADR-002, ADR-003).
-- [ ] **Task 0.2**: Establish core package architecture (`core/`, `cli/`, `tests/`) and executable entrypoint `keel`.
-- [ ] **Task 0.3**: Implement initial test harness and verifying smoke test.
+- [x] **Task 0.2**: Establish core package architecture (`core/`, `cli/`, `tests/`) and executable entrypoint `keel`.
+- [x] **Task 0.3**: Implement initial test harness and verifying smoke test.
 - [ ] **Task 0.4**: Configure automated doctor verification command in `config/autoloop.json`.
 
 ### Phase 1: Workspace Scanner & VCS Radar Engine

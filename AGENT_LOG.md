@@ -19,3 +19,18 @@ Each entry documents accomplishments, verifications, ADRs registered, and explic
   - Scaffolding complete.
   - Next task on roadmap: Phase 0 Task 0.2 (Establish build and verification skeleton) or Phase 1 Task 1.1.
 
+
+## [Run 001] — 2026-09-10
+- **Agent**: Ralph Loop Autonomous Agent
+- **Phase**: Phase 0 — Repository Architecture & Verification Harness
+- **Task Addressed**: Task 0.2 & 0.3 — Establish core package architecture (core, cli, tests), executable entrypoint keel, and test harness.
+- **Actions Taken**:
+  - Created core/ and cli/ packages with version and argument parsing.
+  - Implemented executable entrypoint `keel` supporting `--version` and initial subcommands (`radar`, `loops`, `health`).
+  - Created tests/ directory with initial smoke tests (`test_smoke.py`).
+  - Verified tests pass via `python3 -m unittest discover tests`.
+- **Verification**:
+  - `python3 tools/doctor.py`: 100% HEALTHY (tests passed in 0.09s, doc sync passed).
+- **Handoff Notes for Next Agent**:
+  - Core package and test harness established.
+  - Next task: Task 0.4 (Configure automated doctor verification in config/autoloop.json) or Phase 1 Task 1.1 (WorkspaceScanner).
