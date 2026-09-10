@@ -1,0 +1,25 @@
+{
+  "project_name": "JetskisChoice",
+  "pitch": "Sovereign developer workstation radar and autonomous agent loop hub",
+  "vcs": {
+    "type": "git",
+    "details": {
+      "remote_url": "git@github.com:mrmarkwell/jetskis_choice.git",
+      "owner": "mrmarkwell",
+      "repo": "jetskis_choice"
+    }
+  },
+  "verification": {
+    "build_system": "unbootstrapped",
+    "build_command": null,
+    "test_command": null,
+    "lint_command": null
+  },
+  "issues": {
+    "provider": "local"
+  },
+  "invariants": [
+    "100% test pass required",
+    "Hermetic execution"
+  ]
+}
