@@ -22,7 +22,7 @@ Autonomous agents must consult this document during boot and update it upon comp
 
 ### Phase 1: Workspace Scanner & VCS Radar Engine
 - [x] **Task 1.1**: Implement `WorkspaceScanner` to discover Git and Piper/CitC repositories across filesystem roots.
-- [ ] **Task 1.2**: Implement `RepoInspector` to extract branch, dirty status, uncommitted count, and unpushed commit count.
+- [x] **Task 1.2**: Implement `RepoInspector` to extract branch, dirty status, uncommitted count, and unpushed commit count.
 - [ ] **Task 1.3**: Implement CLI subcommand `keel radar` with formatted ANSI table output.
 - [ ] **Task 1.4**: Hermetic unit tests for scanner and inspector with mock directories.
 
