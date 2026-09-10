@@ -27,8 +27,8 @@ Autonomous agents must consult this document during boot and update it upon comp
 - [x] **Task 1.4**: Hermetic unit tests for scanner and inspector with mock directories.
 
 ### Phase 2: Autonomous Loop Hub & Telemetry Tracker
-- [ ] **Task 2.1**: Implement `LoopDetector` to identify Autoloop / Ralph repositories via `AGENT_LOG.md` and `ROADMAP.md`.
-- [ ] **Task 2.2**: Implement `LoopTelemetry` parser extracting run count, active phase, completion %, and latest run status.
+- [x] **Task 2.1**: Implement `LoopDetector` to identify Autoloop / Ralph repositories via `AGENT_LOG.md` and `ROADMAP.md`.
+- [x] **Task 2.2**: Implement `LoopTelemetry` parser extracting run count, active phase, completion %, and latest run status.
 - [ ] **Task 2.3**: Implement CLI subcommand `keel loops` displaying multi-project agent progress.
 - [ ] **Task 2.4**: Hermetic unit tests for loop telemetry parser.
 
