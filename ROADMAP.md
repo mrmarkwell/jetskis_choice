@@ -29,8 +29,8 @@ Autonomous agents must consult this document during boot and update it upon comp
 ### Phase 2: Autonomous Loop Hub & Telemetry Tracker
 - [x] **Task 2.1**: Implement `LoopDetector` to identify Autoloop / Ralph repositories via `AGENT_LOG.md` and `ROADMAP.md`.
 - [x] **Task 2.2**: Implement `LoopTelemetry` parser extracting run count, active phase, completion %, and latest run status.
-- [ ] **Task 2.3**: Implement CLI subcommand `keel loops` displaying multi-project agent progress.
-- [ ] **Task 2.4**: Hermetic unit tests for loop telemetry parser.
+- [x] **Task 2.3**: Implement CLI subcommand `keel loops` displaying multi-project agent progress.
+- [x] **Task 2.4**: Hermetic unit tests for loop telemetry parser.
 
 ### Phase 3: Workstation Health Score & Retro Dashboard
 - [ ] **Task 3.1**: Implement `WorkstationHealthScorer` computing weighted hygiene score (0–100) and actionable recommendations.

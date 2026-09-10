@@ -8,6 +8,7 @@ import sys
 from typing import List, Optional
 
 from cli.radar import run_radar
+from cli.loops import run_loops
 from core.version import __app_name__, __description__, __version__
 
 
@@ -44,8 +45,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     if args.command == "radar":
         return run_radar(Path(args.root))
     elif args.command == "loops":
-        print("Keel Loops: discovering...")
-        return 0
+        return run_loops(Path(args.root))
     elif args.command == "health":
         print("Keel Health: computing...")
         return 0
