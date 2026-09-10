@@ -20,12 +20,11 @@ class TestSmoke(unittest.TestCase):
         self.assertEqual(__app_name__, "keel")
         self.assertEqual(__version__, "0.1.0")
 
-    def test_cli_help(self):
-        parser = create_parser()
+    def test_cli_default_dashboard(self):
         with patch("sys.stdout", new_callable=io.StringIO) as mock_out:
             code = main([])
             self.assertEqual(code, 0)
-            self.assertIn("keel", mock_out.getvalue())
+            self.assertIn("KEEL", mock_out.getvalue().upper())
 
 
 if __name__ == "__main__":

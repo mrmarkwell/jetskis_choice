@@ -15,7 +15,7 @@ from core.scanner import WorkspaceScanner
 HELM_BANNER = r"""
         .---.
        /  |  \
-  ====(   ⚓   )====   K E E L — JETSKI'S CHOICE WORKSTATION RADAR
+  ====(   ⚓   )====   KEEL — JETSKI'S CHOICE WORKSTATION RADAR
        \  |  /
         '---'
 """
