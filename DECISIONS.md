@@ -47,3 +47,16 @@ This document is an append-only log of significant design, architecture, and tec
 - **Consequences**:
   - High velocity and confidence during autonomous iterations.
   - Immediate detection of regressions.
+
+---
+
+## ADR-004: Sovereign Zero-Dependency Static Analysis & Linter Guard
+- **Date**: 2026-09-10
+- **Status**: Accepted
+- **Context**: Conceived during Senior PM Cleanup Sprint #005. Syntax errors and formatting defects should be caught in milliseconds via AST parsing before running the entire test suite.
+- **Decision**:
+  - Implement `tools/linter.py` using Python standard library `ast` module.
+  - Wire linter into pre-commit validation to block invalid bytecode and whitespace hygiene defects.
+- **Consequences**:
+  - Instant static feedback (<0.04s).
+  - Eliminates syntax errors before tests run.

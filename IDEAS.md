@@ -38,3 +38,8 @@ Every idea in this hopper or proposed during agent briefings must be assigned an
 
 ## Active Ideas & Brainstorming Hopper
 
+
+### [VETTED] Sovereign Zero-Dependency Static Analysis & Linter Guard (Rank A+)
+- **Summary**: Lightweight AST syntax and hygiene checker (`tools/linter.py`).
+- **Rationale**: Instant verification in <0.04s catching syntax breaks before test execution.
+- **Status**: Implemented in Run 005 via ADR-004.
