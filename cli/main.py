@@ -1,3 +1,4 @@
+from cli.radar import run_radar
 """Main CLI argument parsing and dispatch for Keel."""
 
 from __future__ import annotations
@@ -40,8 +41,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         return 0
 
     if args.command == "radar":
-        print("Keel Radar: scanning...")
-        return 0
+        return run_radar(Path(args.root))
     elif args.command == "loops":
         print("Keel Loops: discovering...")
         return 0
