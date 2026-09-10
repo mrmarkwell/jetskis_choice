@@ -43,3 +43,8 @@ Every idea in this hopper or proposed during agent briefings must be assigned an
 - **Summary**: Lightweight AST syntax and hygiene checker (`tools/linter.py`).
 - **Rationale**: Instant verification in <0.04s catching syntax breaks before test execution.
 - **Status**: Implemented in Run 005 via ADR-004.
+
+### [VETTED] Universal Machine-Readable JSON Telemetry Pipeline (Rank A+)
+- **Summary**: Comprehensive `--json` output across all subcommands (`radar`, `loops`, `health`, `dashboard`).
+- **Rationale**: Enables autonomous agents and external tooling to consume telemetry programmatically.
+- **Status**: Implemented in Run 010 via ADR-005.

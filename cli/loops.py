@@ -33,7 +33,7 @@ def format_loops_table(projects: List[LoopProject]) -> str:
     return "\n".join(lines)
 
 
-def run_loops(root_path: Path) -> int:
+def run_loops(root_path: Path, json_output: bool = False) -> int:
     scanner = WorkspaceScanner(root_path)
     repos = scanner.scan()
     projects: List[LoopProject] = []
@@ -42,5 +42,9 @@ def run_loops(root_path: Path) -> int:
         if p:
             projects.append(p)
 
-    print(format_loops_table(projects))
+    if json_output:
+        import json
+        print(json.dumps([p.to_dict() for p in projects], indent=2))
+    else:
+        print(format_loops_table(projects))
     return 0

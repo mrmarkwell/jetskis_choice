@@ -60,3 +60,16 @@ This document is an append-only log of significant design, architecture, and tec
 - **Consequences**:
   - Instant static feedback (<0.04s).
   - Eliminates syntax errors before tests run.
+
+---
+
+## ADR-005: Universal Machine-Readable JSON Telemetry Pipeline
+- **Date**: 2026-09-10
+- **Status**: Accepted
+- **Context**: Conceived during Double Milestone Sprint #010. External tooling, scripts, IDE plugins, and autonomous agents require structured machine-readable access to repository health, radar telemetry, and loop progress.
+- **Decision**:
+  - Add universal `--json` flag to `keel`, `radar`, `loops`, `health`, and `dashboard`.
+  - Maintain 100% stdlib JSON serialization without third-party dependencies.
+- **Consequences**:
+  - Seamless interoperability with other autonomous tools.
+  - Zero performance penalty on standard terminal output.

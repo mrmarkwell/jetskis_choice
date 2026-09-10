@@ -32,9 +32,13 @@ def format_radar_table(statuses: List[RepoStatus]) -> str:
     return "\n".join(lines)
 
 
-def run_radar(root_path: Path) -> int:
+def run_radar(root_path: Path, json_output: bool = False) -> int:
     scanner = WorkspaceScanner(root_path)
     repos = scanner.scan()
     statuses = [RepoInspector(r.path).inspect() for r in repos]
-    print(format_radar_table(statuses))
+    if json_output:
+        import json
+        print(json.dumps([s.to_dict() for s in statuses], indent=2))
+    else:
+        print(format_radar_table(statuses))
     return 0

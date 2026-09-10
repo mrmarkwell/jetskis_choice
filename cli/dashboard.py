@@ -39,6 +39,29 @@ def render_dashboard(root_path: Path) -> str:
     return "\n".join(lines)
 
 
-def run_dashboard(root_path: Path) -> int:
-    print(render_dashboard(root_path))
+def run_dashboard(root_path: Path, json_output: bool = False) -> int:
+    if json_output:
+        from core.scanner import WorkspaceScanner
+        from core.inspector import RepoInspector
+        from core.loop_tracker import LoopTracker
+        from core.health import WorkstationHealthScorer
+        import json
+        scanner = WorkspaceScanner(root_path)
+        repos = scanner.scan()
+        statuses = [RepoInspector(r.path).inspect() for r in repos]
+        projects = [p for p in (LoopTracker.parse_project(r.path) for r in repos) if p is not None]
+        health = WorkstationHealthScorer.score(statuses)
+        payload = {
+            "health": {
+                "score": health.score,
+                "grade": health.grade,
+                "total_repos": health.total_repos,
+                "clean_repos": health.clean_repos,
+            },
+            "loops": [p.to_dict() for p in projects],
+            "repos": [s.to_dict() for s in statuses],
+        }
+        print(json.dumps(payload, indent=2))
+    else:
+        print(render_dashboard(root_path))
     return 0
