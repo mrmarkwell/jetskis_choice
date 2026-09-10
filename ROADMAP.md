@@ -35,5 +35,5 @@ Autonomous agents must consult this document during boot and update it upon comp
 ### Phase 3: Workstation Health Score & Retro Dashboard
 - [x] **Task 3.1**: Implement `WorkstationHealthScorer` computing weighted hygiene score (0–100) and actionable recommendations.
 - [x] **Task 3.2**: Implement CLI subcommand `keel health`.
-- [ ] **Task 3.3**: Implement ASCII Ship's Helm Dashboard (`keel dashboard` / `keel tui`).
-- [ ] **Task 3.4**: Comprehensive end-to-end regression tests and documentation.
+- [x] **Task 3.3**: Implement ASCII Ship's Helm Dashboard (`keel dashboard` / `keel tui`).
+- [x] **Task 3.4**: Comprehensive end-to-end regression tests and documentation.
