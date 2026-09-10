@@ -1,12 +1,13 @@
-from cli.radar import run_radar
 """Main CLI argument parsing and dispatch for Keel."""
 
 from __future__ import annotations
 
 import argparse
+from pathlib import Path
 import sys
 from typing import List, Optional
 
+from cli.radar import run_radar
 from core.version import __app_name__, __description__, __version__
 
 
