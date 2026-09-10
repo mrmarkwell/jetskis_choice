@@ -18,10 +18,10 @@ Autonomous agents must consult this document during boot and update it upon comp
 - [x] **Task 0.1**: Initialize autonomous harness, living state machines, and developer tooling (ADR-001, ADR-002, ADR-003).
 - [x] **Task 0.2**: Establish core package architecture (`core/`, `cli/`, `tests/`) and executable entrypoint `keel`.
 - [x] **Task 0.3**: Implement initial test harness and verifying smoke test.
-- [ ] **Task 0.4**: Configure automated doctor verification command in `config/autoloop.json`.
+- [x] **Task 0.4**: Configure automated doctor verification command in `config/autoloop.json`.
 
 ### Phase 1: Workspace Scanner & VCS Radar Engine
-- [ ] **Task 1.1**: Implement `WorkspaceScanner` to discover Git and Piper/CitC repositories across filesystem roots.
+- [x] **Task 1.1**: Implement `WorkspaceScanner` to discover Git and Piper/CitC repositories across filesystem roots.
 - [ ] **Task 1.2**: Implement `RepoInspector` to extract branch, dirty status, uncommitted count, and unpushed commit count.
 - [ ] **Task 1.3**: Implement CLI subcommand `keel radar` with formatted ANSI table output.
 - [ ] **Task 1.4**: Hermetic unit tests for scanner and inspector with mock directories.

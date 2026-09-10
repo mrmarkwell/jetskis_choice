@@ -10,9 +10,9 @@
     }
   },
   "verification": {
-    "build_system": "unbootstrapped",
+    "build_system": "python",
     "build_command": null,
-    "test_command": null,
+    "test_command": "python3 -m unittest discover tests",
     "lint_command": null
   },
   "issues": {
