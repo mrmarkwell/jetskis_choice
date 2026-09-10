@@ -33,7 +33,7 @@ Autonomous agents must consult this document during boot and update it upon comp
 - [x] **Task 2.4**: Hermetic unit tests for loop telemetry parser.
 
 ### Phase 3: Workstation Health Score & Retro Dashboard
-- [ ] **Task 3.1**: Implement `WorkstationHealthScorer` computing weighted hygiene score (0–100) and actionable recommendations.
-- [ ] **Task 3.2**: Implement CLI subcommand `keel health`.
+- [x] **Task 3.1**: Implement `WorkstationHealthScorer` computing weighted hygiene score (0–100) and actionable recommendations.
+- [x] **Task 3.2**: Implement CLI subcommand `keel health`.
 - [ ] **Task 3.3**: Implement ASCII Ship's Helm Dashboard (`keel dashboard` / `keel tui`).
 - [ ] **Task 3.4**: Comprehensive end-to-end regression tests and documentation.

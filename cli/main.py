@@ -9,6 +9,7 @@ from typing import List, Optional
 
 from cli.radar import run_radar
 from cli.loops import run_loops
+from cli.health import run_health
 from core.version import __app_name__, __description__, __version__
 
 
@@ -47,8 +48,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     elif args.command == "loops":
         return run_loops(Path(args.root))
     elif args.command == "health":
-        print("Keel Health: computing...")
-        return 0
+        return run_health(Path(args.root if hasattr(args, "root") else "."))
 
     return 0
 
